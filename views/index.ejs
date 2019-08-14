@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title><%- title -%></title>
     <%- include('import'); -%>
   </head>
   <body>
     <%- include('navbar'); -%>
-    <h1><%= title %></h1>
-    <p>Professor <%= professor %></p>
+
+    <div class="container">
+
+      <div class="row justify-content-around">
+          <% posts.forEach((post) => { %>
+            <%- include('post_card', {post: post}); -%>
+          <% }); %>
+      </div>
+
+    </div>
   </body>
 </html>
