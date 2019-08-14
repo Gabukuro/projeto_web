@@ -7,14 +7,20 @@
   <body>
     <%- include('navbar'); -%>
 
-    <div class="container">
-
-      <div class="row justify-content-around">
-          <% posts.forEach((post) => { %>
-            <%- include('post_card', {post: post}); -%>
-          <% }); %>
+    <div class="container py-5">
+    
+    </div>
+    <div class="container-fluid fill-dark py-5">
+      <div class="container">
+        <div class="row justify-content-around">
+            <% posts.forEach((post) => { %>
+              <%- include('post_card', {post: post}); -%>
+            <% }); %>
+        </div>
       </div>
 
     </div>
+
+    <%- include('footer'); -%>
   </body>
 </html>

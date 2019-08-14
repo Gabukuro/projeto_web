@@ -5,3 +5,34 @@ body {
 a {
   color: #00B7FF;
 }
+
+.navbar {
+
+}
+
+.fill-dark {
+    background: rgb(42, 46, 58);
+}
+
+.card-img-top {
+    height: 60%;
+    width: 93%;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+                0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: #343a40 !important;
+}
