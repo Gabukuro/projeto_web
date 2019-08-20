@@ -13,9 +13,11 @@
     <div class="container-fluid fill-dark py-5">
       <div class="container">
         <div class="row justify-content-around">
+
             <% posts.forEach((post) => { %>
               <%- include('post_card', {post: post}); -%>
             <% }); %>
+            
         </div>
       </div>
 

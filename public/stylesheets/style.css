@@ -28,6 +28,11 @@ a {
                 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+.post-detail > img {
+    width: 800px;
+    height: 200px;
+}
+
 footer {
     position: fixed;
     left: 0;

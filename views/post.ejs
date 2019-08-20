@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%- title -%></title>
+    <%- include('import'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+
+      <div class="container">
+
+      <div class="post-detail">
+
+        <img src="<%= `/images/${post.image}` %>" />
+        <h1><%= post.title %></h1>
+        <p><%= post.description %></p>
+        
+      </div>
+
+      </div>
+
+
+  </body>
+</html>
