@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%- title -%></title>
+    <%- include('import'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+
+      <div class="container">
+
+        <ul class="list-group list-group-flush">
+
+            <% posts.forEach((post) => { %>
+                <%- include('post_list', {post: post}); -%>
+            <% }); %>
+            
+          </ul>
+
+      </div>
+
+
+  </body>
+</html>

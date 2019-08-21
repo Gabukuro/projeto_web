@@ -2,12 +2,12 @@ body {
   
 }
 
-a {
-  color: #00B7FF;
+a:link {
+    text-decoration: none;
 }
 
-.navbar {
-
+.nav-link {
+    color: #fff;
 }
 
 .fill-dark {
@@ -26,6 +26,18 @@ a {
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
                 0 4px 25px 0px rgba(0, 0, 0, 0.12), 
                 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.media > img {
+    width: 120px;
+    height: 120px;
+}
+.media {
+    color: black;
+}
+
+li:hover {
+    background: #dee2e6;
 }
 
 .post-detail > img {

@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('index', {title: 'Blog', posts: posts});
 });
 
+router.get('/posts', function(req, res, next){
+  var posts = postsService.getPosts();
+  
+  res.render('posts', {title: 'Blog', posts: posts});
+});
+
 router.get('/post/:postId', function(req, res, next) {
 	var postId = req.params.postId;
   
