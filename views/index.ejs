@@ -7,11 +7,19 @@
   <body>
     <%- include('navbar'); -%>
 
-    <div class="container py-5">
+    <div class="container pt-5 pb-3">
     
+        <div class="row justify-content-around py-5">
+
+            <% projects.forEach((project) => {%>
+              <%- include('project_card', {project: project}); -%>
+            <% }); %>
+            
+        </div>
+
     </div>
-    <div class="container-fluid fill-dark py-5">
-      <div class="container">
+    <div class="container-fluid fill-dark">
+      <div class="container pt-5 pb-3">
         <div class="row justify-content-around">
 
             <% posts.forEach((post) => { %>

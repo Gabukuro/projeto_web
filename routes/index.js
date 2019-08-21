@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
 var postsService = require('../services/postsService');
+var projectsService = require('../services/projectsService');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var posts = postsService.getPosts();
+  var projects = projectsService.getProjects();
   
-  res.render('index', {title: 'Blog', posts: posts});
+  res.render('index', {title: 'Blog', posts: posts, projects: projects});
 });
 
 router.get('/posts', function(req, res, next){
@@ -22,8 +24,26 @@ router.get('/post/:postId', function(req, res, next) {
 
   var post = posts.filter((post) => post.id == postId)[0];
   
-  res.render('post', { title: post.title, post: post })
+  res.render('post', { title: post.title, post: post });
 
 });
+
+router.get('/projects', function(req, res, next){
+  var projects = projectsService.getProjects();
+
+  res.render('projects', { title: 'Blog', projects: projects });
+});
+
+router.get('/project/:projectId', function(req, res, next){
+  var projectId = req.params.projectId;
+
+  var projects = projectsService.getProjects();
+
+  var project = projects.filter((project) => project.id == projectId)[0];
+
+  res.render('project', {title: project.title, project: project });
+});
+
+
 
 module.exports = router;

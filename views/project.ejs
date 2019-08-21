@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%- title -%></title>
+    <%- include('import'); -%>
+  </head>
+  <body>
+      <%- include('navbar'); -%>
+
+      <div class="container">
+      
+        <div class="post-detail">
+          
+          <div class="media-body">
+
+            <h1><%= project.name %></h1>
+            <p><%= project.subject %></p>
+            
+            <section class="header-post" style="background-image: url('<%= `/images/${project.image}` %>');" class="rounded">
+            </section>
+
+            <p><%= project.description %></p>
+
+          </div>
+          
+
+        </div>
+
+          
+        </div>
+
+      </div>
+
+      <%- include('footer'); -%>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%- title -%></title>
+    <%- include('import'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+
+      <div class="container">
+
+        <h1 class="my-3">Todos os Posts</h1>
+
+        <ul class="list-group list-group-flush">
+
+            <% projects.forEach((project) => { %>
+                <%- include('project_list', {project: project}); -%>
+            <% }); %>
+            
+          </ul>
+
+      </div>
+
+      <%- include('footer'); -%>
+  </body>
+</html>

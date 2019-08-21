@@ -5,17 +5,28 @@
     <%- include('import'); -%>
   </head>
   <body>
-    <%- include('navbar'); -%>
+      <%- include('navbar'); -%>
 
       <div class="container">
+      
+        <div class="post-detail">
 
-      <div class="post-detail">
+          
+          <div class="media-body">
 
-        <img src="<%= `/images/${post.image}` %>" />
-        <h1><%= post.title %></h1>
-        <p><%= post.description %></p>
-        
-      </div>
+            <h1><%= post.title %></h1>
+            <p><%= post.description %></p>
+            
+            <section class="header-post" style="background-image: url('<%= `/images/${post.image}` %>');" class="rounded">
+            </section>
+            
+            <p><%= post.body %></p>
+
+          </div>
+
+        </div>
+          
+        </div>
 
       </div>
 

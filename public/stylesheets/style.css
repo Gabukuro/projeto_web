@@ -2,6 +2,10 @@ body {
   
 }
 
+.navbar{
+    background: rgb(0, 0, 0);
+}
+
 a:link {
     text-decoration: none;
 }
@@ -11,7 +15,16 @@ a:link {
 }
 
 .fill-dark {
-    background: rgb(42, 46, 58);
+    background: rgb(114, 51, 116);
+    color: white;
+}
+
+.card-title{
+    color: rgb(114, 51, 116);
+}
+
+.card {
+    color: black;
 }
 
 .card-img-top {
@@ -32,6 +45,7 @@ a:link {
     width: 120px;
     height: 120px;
 }
+
 .media {
     color: black;
 }
@@ -40,16 +54,29 @@ li:hover {
     background: #dee2e6;
 }
 
+.header-post {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.header-post > h1 {
+    font-size: 60px;
+}
+
 .post-detail > img {
-    width: 800px;
+    width: 600px;
     height: 200px;
 }
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
-    background: #343a40 !important;
+    background: rgb(0, 0, 0) !important;
 }
